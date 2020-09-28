@@ -1,0 +1,196 @@
+.feature-des-wrapper {
+    align-self: center;
+    margin-top: -6rem;
+
+    /** 800px */
+    @media only screen and (max-width: 50em) {
+        margin-top: 0rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+.feature-box-container {
+    align-self: center;
+
+    /** 800px */
+    @media only screen and (max-width: 50em) {
+        margin-top: 0rem;
+        display: flex;
+    }
+
+    /** 550px */
+    @media only screen and (max-width: 34.375em) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
+    }
+
+}
+
+.feature-wrap {
+
+    &-one {
+        filter: drop-shadow(0rem 0rem 1.5rem rgba($shadow, .08));
+    }
+
+    &-two {
+        margin-top: -22.5rem;
+        margin-left: 29rem;
+        filter: drop-shadow(0rem 0rem 1.5rem rgba($shadow, .08));
+
+        /** 1050px */
+        @media only screen and (max-width: 65.625em) {
+            margin-top: -20rem;
+            margin-left: 25.5rem;
+        }
+
+        /** 800px */
+        @media only screen and (max-width: 50em) {
+            margin: 0;
+            margin-right: 2.5rem;
+            margin-left: 2.5rem;
+        }
+
+        /** 550px */
+        @media only screen and (max-width: 34.375em) {
+            margin-top: -19rem;
+            margin-left: 23rem;
+        }
+
+        /** 370px */
+        @media only screen and (max-width: 23.125em) {
+            margin-top: -19rem;
+            margin-left: 21rem;
+        }
+    }
+
+    &-three {
+        margin-top: -6.5rem;
+        margin-left: 10.6rem;
+        filter: drop-shadow(0rem 0rem 1.5rem rgba($shadow, .08));
+
+        /** 1050px */
+        @media only screen and (max-width: 65.625em) {
+            margin-top: -6rem;
+            margin-left: 9.3rem;
+        }
+
+        /** 800px */
+        @media only screen and (max-width: 50em) {
+            margin: 0;
+        }
+
+        /** 550px */
+        @media only screen and (max-width: 34.375em) {
+            margin-top: -5.3rem;
+            margin-left: 9rem;
+        }
+
+        /** 370px */
+        @media only screen and (max-width: 23.125em) {
+            margin-top: -4.5rem;
+            margin-left: 9.5rem;
+        }
+    }
+}
+
+.feature {
+    width: 26rem;
+    height: 27rem;
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+    /** 1050px */
+    @media only screen and (max-width: 65.625em) {
+        width: 23rem;
+        height: 24rem;
+    }
+
+    /** 600px */
+    @include respond(phone) {
+        width: 21rem;
+        height: 22rem;
+    }
+
+    /** 370px */
+    @media only screen and (max-width: 23.125em) {
+        width: 19.5rem;
+        height: 20.5rem;
+    }
+
+
+    &__icon {
+        width: 6.5rem;
+        height: 6.5rem;
+        fill: $primary-light;
+        margin-top: 3.3rem;
+        margin-bottom: .7rem;
+
+        /** 1050px */
+        @media only screen and (max-width: 65.625em) {
+            width: 6rem;
+            height: 6rem;
+        }
+
+        /** 600px */
+        @include respond(phone) {
+            width: 4.7rem;
+            height: 4.7rem;
+            margin-top: 1.5rem;
+            margin-bottom: .4rem;
+        }
+
+        /** 370px */
+        @media only screen and (max-width: 23.125em) {
+            width: 4.4rem;
+            height: 4.4rem;
+        }
+    }
+
+    &__long {
+        font-size: 1.2rem;
+        margin-top: .2rem;
+
+        /** 1050px */
+        @media only screen and (max-width: 65.625em) {
+            font-size: 1.05rem;
+        }
+
+        /** 900px */
+        @include respond(tab-port) {
+            font-size: 1rem;
+        }
+
+        /** 600px */
+        @include respond(phone) {
+            font-size: 1.1rem;
+        }
+
+        /** 370px */
+        @media only screen and (max-width: 23.125em) {
+            font-size: 1rem;
+        }
+
+    }
+}
+
+.feature-description {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    width: 40rem;
+
+    /** 1400px */
+    @media only screen and (max-width: 81.25em) {
+        width: 38rem;
+    }
+
+    span {
+        margin-top: 1rem;
+        display: block;
+    }
+}

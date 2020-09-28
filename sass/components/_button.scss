@@ -1,0 +1,84 @@
+.btn {
+
+    &-primary {
+
+        &:link,
+        &:visited {
+            // Center element
+            @include absCenter;
+            top: 55%;
+
+            // Link style
+            text-decoration: none;
+
+            // Text style
+            color: white;
+            font-size: 2rem;
+            letter-spacing: .2rem;
+
+            // Display design
+            background-color: $primary;
+            padding: .4rem 3rem;
+            border-radius: 10rem;
+            transition: all .2s;
+
+            /** 450px */
+            @media only screen and (max-width: 28.125em) {
+                top: 48%;
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-color: darken($primary, 10%);
+        }
+    }
+
+
+    &-secondary {
+        transform: skew(-20deg);
+        background-color: lighten($primary-light, 20%);
+        width: max-content;
+        padding: .2rem 1.5rem;
+        cursor: pointer;
+
+        a {
+
+            &:link,
+            &:visited {
+                display: block;
+                text-decoration: none;
+                font-size: 1.8rem;
+                color: white;
+                transform: skew(20deg);
+                transition: all .4s;
+
+                /** 900px */
+                @include respond(tab-port) {
+                    font-size: 1.7rem;
+                }
+
+            }
+        }
+
+        &::before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to right bottom, $primary, $primary-light);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .4s;
+        }
+
+        &:hover::before {
+            left: .8rem;
+        }
+
+        &:hover a {
+            transform: skew(20deg) translateX(.8rem) perspective(1px) translateZ(0);
+            backface-visibility: hidden;
+        }
+    }
+}

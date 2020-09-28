@@ -1,0 +1,146 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+}
+
+.author-name {
+    font-family: Dattge Hurty;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.heading-1 {
+    @include absCenter;
+    top: 35%;
+
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 70rem;
+
+
+    &--main {
+        font-size: 8rem;
+        font-weight: 300;
+        letter-spacing: 4rem;
+        display: block;
+        margin-right: -3rem;
+
+        @include respond(phone) {
+            letter-spacing: 2rem;
+            font-size: 6rem;
+        }
+
+        /** 450px */
+        @media only screen and (max-width: 28.125em) {
+            margin-right: -1rem;
+        }
+
+        /** 370px */
+        @media only screen and (max-width: 23.125em) {
+            letter-spacing: 1rem;
+        }
+
+    }
+
+    &--sub {
+        font-size: 1.5rem;
+        display: block;
+
+        word-spacing: .3rem;
+        letter-spacing: .2rem;
+        line-height: 1.7;
+
+        /** 600px */
+        @include respond(phone) {
+            font-size: 1.2rem;
+            letter-spacing: .1rem;
+            word-spacing: .1rem;
+            padding: 0 8rem;
+            line-height: 2;
+            min-width: min-content;
+        }
+
+        /** 450px */
+        @media only screen and (max-width: 28.125em) {
+            display: none;
+        }
+    }
+}
+
+.heading-2 {
+    font-size: 4rem;
+    line-height: 1;
+    color: $primary-dark;
+
+    @media only screen and (max-width: 65.625em) {
+        font-size: 3.5rem;
+    }
+
+    /** 900px */
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    /** 800px */
+    @media only screen and (max-width: 50em) {
+        font-size: 4rem;
+    }
+
+    /** 600px */
+    @include respond(phone) {
+        font-size: 3rem;
+    }
+}
+
+.heading-3 {
+    font-family: Dattge Hurty;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    @include text-gradient;
+    transform: skew(20deg) rotate(-14deg);
+}
+
+.heading-4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    word-spacing: 1.3px;
+
+    /** 600px */
+    @include respond(phone) {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+
+    /** 370px */
+    @media only screen and (max-width: 23.125em) {
+        font-size: 1.3rem;
+    }
+}
+
+.heading-5 {
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 2rem;
+    letter-spacing: 6px;
+    @include text-gradient;
+    text-transform: uppercase;
+
+    @include respond(phone) {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+}
+
+.heading-6 {
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: #444;
+    font-size: 2.1rem;
+    line-height: 1;
+    text-transform: uppercase;
+}

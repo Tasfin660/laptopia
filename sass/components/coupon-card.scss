@@ -1,0 +1,131 @@
+.coupon {
+    margin-top: 1.5rem auto;
+    padding: 2rem;
+    width: 67.6rem;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 2rem 6rem 1rem rgba(black, 0.1);
+    border-radius: 1rem;
+
+
+    @include respond(phone) {
+        width: 45rem;
+        padding-bottom: 4rem;
+        margin: 0 auto;
+    }
+
+    /** 370px */
+    @media only screen and (max-width: 23.125em) {
+        width: 35rem;
+        padding-bottom: 3rem;
+    }
+
+    &__new {
+        width: 7rem;
+        position: absolute;
+        top: -18px;
+        right: 10%;
+
+        @include respond(phone) {
+            right: 5%;
+            width: 6rem;
+            top: -12px;
+        }
+    }
+
+    &__price {
+        @include text-gradient;
+        font-size: 4rem;
+        font-weight: 100;
+    }
+
+    &__list {
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    &__list-icon {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: .5rem;
+        fill: $primary-light;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__long {
+        font-size: 1.4rem;
+    }
+
+    &__validity {
+        margin-top: 3rem;
+        display: flex;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: 0;
+            height: 2px;
+            width: 40rem;
+            background-color: $primary-light;
+
+            /** 370px */
+            @media only screen and (max-width: 23.125em) {
+                width: 31rem;
+            }
+        }
+    }
+
+    &__img {
+        width: 1.8rem;
+        margin-right: .6rem;
+    }
+
+    &__web-name {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+
+        span {
+            font-family: Dattge Hurty;
+            color: $primary;
+            letter-spacing: 1;
+        }
+    }
+
+    &__btn {
+
+        &:link,
+        &:visited {
+            position: absolute;
+            right: 2rem;
+            bottom: 2rem;
+            text-decoration: none;
+            color: $primary-light;
+            font-size: 2.2rem;
+            padding: 0 1.4rem;
+            border: 2px solid $primary-light;
+            border-radius: 10rem;
+            transition: all .2s;
+            margin-left: auto;
+
+            /** 370px */
+            @media only screen and (max-width: 23.125em) {
+                line-height: 1.5;
+                font-size: 1.6rem;
+                padding: 0 .8rem;
+            }
+        }
+
+        &:hover,
+        &:active {
+            color: white;
+            background-color: $primary-light;
+        }
+    }
+}

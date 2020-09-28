@@ -1,0 +1,41 @@
+.company {
+
+    &__laptop {
+        width: 100%;
+        margin-bottom: 1rem;
+        border: 2.5px solid white;
+        border-radius: 2rem;
+    }
+
+    &__long {
+        font-size: 1.4rem;
+        color: white;
+        padding: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+
+        b {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__ratings {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+    }
+
+    &__icon-star {
+        fill: $primary;
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+
+    &__logo {
+        width: 5rem;
+        border: 3px solid white;
+        border-radius: 100rem;
+        margin-left: 1rem;
+    }
+}
