@@ -41,16 +41,7 @@ body {
     color: #777
 }
 
-@font-face {
-    font-family: 'Dattge Hurty';
-    src: url('DattgeHurty.woff2') format('woff2'),
-        url('DattgeHurty.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .author-name {
-    font-family: 'Dattge Hurty';
     letter-spacing: 1px;
     font-size: 1.5rem
 }
@@ -153,7 +144,6 @@ body {
 }
 
 .heading-3 {
-    font-family: 'Dattge Hurty';
     letter-spacing: 1px;
     font-size: 3rem;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#18f), to(#06c));
