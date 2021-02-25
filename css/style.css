@@ -145,7 +145,7 @@ body {
 
 .heading-3 {
     letter-spacing: 1px;
-    font-size: 3rem;
+    font-size: 2.2rem;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#18f), to(#06c));
     background-image: linear-gradient(#18f, #06c);
     -webkit-background-clip: text;
